@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, <span id="username"></span></h2>
+        <p>Your Available Credits: <span id="credits"></span></p>
+        <button onclick="requestCredits()">Request More Credits</button>
+        
+        <h3>Upload Document for Scanning</h3>
+        <input type="text" id="documentName" placeholder="Document Name">
+        <button onclick="scanDocument()">Scan</button>
+
+        <h3>Your Scan History</h3>
+        <ul id="scanHistory"></ul>
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
